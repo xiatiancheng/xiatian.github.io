@@ -11,7 +11,7 @@
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -21,12 +21,12 @@
     <link rel="icon" href="/favicon.png">
   
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
   
 <link rel="stylesheet" href="/xiatian.github.io/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
 
 <body>
   <div id="container">
@@ -53,7 +53,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/xiatian.github.io/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
@@ -173,7 +173,8 @@
 <p>支持平台：微信公众号、知乎。</p>
 </blockquote>
 <p>脚注与链接的区别如下所示：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">链接：[<span class="string">文字</span>](<span class="link">链接</span>)</span><br><span class="line">脚注：[<span class="string">文字</span>](<span class="link">脚注解释 &quot;脚注名字&quot;</span>)</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">链接：<span class="token url">[<span class="token content">文字</span>](<span class="token url">链接</span>)</span>
+脚注：<span class="token url">[<span class="token content">文字</span>](<span class="token url">脚注解释</span> <span class="token string">"脚注名字"</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>有人认为在<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Front-end_web_development" title="Front-end web development">大前端时代</a>的背景下，移动端开发（Android、IOS）将逐步退出历史舞台。</p>
 <p><a href="%E6%98%AF%E6%8C%87%E6%8E%8C%E6%8F%A1%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%EF%BC%8C%E5%B9%B6%E8%83%BD%E5%88%A9%E7%94%A8%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%BA%A7%E5%93%81%E7%9A%84%E4%BA%BA%E3%80%82" title="什么是全栈工程师">全栈工程师</a>在业务开发流程中起到了至关重要的作用。</p>
@@ -184,10 +185,33 @@
 <p>如果在一个行内需要引用代码，只要用反引号引起来就好，如下：</p>
 <p>Use the <code>printf()</code> function.</p>
 <p>在需要高亮的代码块的前一行及后一行使用三个反引号，同时<strong>第一行反引号后面表示代码块所使用的语言</strong>，如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// FileName: HelloWorld.java</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">  <span class="comment">// Java 入口程序，程序从此入口</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;Hello,World!&quot;</span>); <span class="comment">// 向控制台打印一条语句</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// FileName: HelloWorld.java</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Java 入口程序，程序从此入口</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello,World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 向控制台打印一条语句</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>支持以下语言种类：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">bash</span><br><span class="line">clojure，cpp，cs，css</span><br><span class="line">dart，dockerfile, diff</span><br><span class="line">erlang</span><br><span class="line">go，gradle，groovy</span><br><span class="line">haskell</span><br><span class="line">java，javascript，json，julia</span><br><span class="line">kotlin</span><br><span class="line">lisp，lua</span><br><span class="line">makefile，markdown，matlab</span><br><span class="line">objectivec</span><br><span class="line">perl，php，python</span><br><span class="line">r，ruby，rust</span><br><span class="line">scala，shell，sql，swift</span><br><span class="line">tex，typescript</span><br><span class="line">verilog，vhdl</span><br><span class="line">xml</span><br><span class="line">yaml</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">bash
+clojure，cpp，cs，css
+dart，dockerfile, diff
+erlang
+go，gradle，groovy
+haskell
+java，javascript，json，julia
+kotlin
+lisp，lua
+makefile，markdown，matlab
+objectivec
+perl，php，python
+r，ruby，rust
+scala，shell，sql，swift
+tex，typescript
+verilog，vhdl
+xml
+yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>如果想要更换代码高亮样式，可在上方<strong>代码主题</strong>中挑选。</p>
 <p>其中<strong>微信代码主题与微信官方一致</strong>，有以下注意事项：</p>
@@ -197,7 +221,8 @@
 <li>粘贴到公众号后，用鼠标点代码块内外一次，完成高亮</li>
 </ul>
 <p>diff 不能同时和其他语言的高亮同时显示，且需要调整代码主题为微信代码主题以外的代码主题才能看到 diff 效果，使用效果如下:</p>
-<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ 新增项</span></span><br><span class="line"><span class="deletion">- 删除项</span></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-diff" data-language="diff"><code class="language-diff"><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line"> 新增项
+</span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line"> 删除项</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><strong>其他主题不带行号，可自定义是否换行，代码大小与当前编辑器一致</strong></p>
 <h3 id="3-3-数学公式"><a href="#3-3-数学公式" class="headerlink" title="3.3 数学公式"></a>3.3 数学公式</h3><blockquote>
@@ -238,7 +263,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/28/article-title/" data-id="ckswrhtp4000010t59nrkbhud" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/28/article-title/" data-id="ckswxzdg60001f8t50z3ggfz9" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/xiatian.github.io/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E-%E5%A4%8F%E5%A4%A9/" rel="tag">更新说明,夏天</a></li></ul>
@@ -261,7 +286,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget">
       <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/xiatian.github.io/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E-%E5%A4%8F%E5%A4%A9/" rel="tag">更新说明,夏天</a></li></ul>
     </div>
@@ -271,7 +296,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
       <a href="/xiatian.github.io/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E-%E5%A4%8F%E5%A4%A9/" style="font-size: 10px;">更新说明,夏天</a>
     </div>
@@ -280,9 +305,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/xiatian.github.io/archives/2021/08/">August 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/xiatian.github.io/archives/2021/08/">八月 2021</a></li></ul>
     </div>
   </div>
 
@@ -290,7 +315,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
         
