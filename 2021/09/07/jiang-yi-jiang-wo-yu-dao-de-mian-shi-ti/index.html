@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="微信公众号排版工具, Hexo">
+    <meta name="keywords" content="面试随记, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>微信公众号排版工具 | Hexo</title>
+    <title>面试随记 | Hexo</title>
     <link rel="icon" type="image/png" href="/xiatian.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/xiatian.github.io/libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/xiatian.github.io/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/xiatian.github.io/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">微信公众号排版工具</h1>
+                    <h1 class="description center-align post-title">面试随记</h1>
                 </div>
             </div>
         </div>
@@ -433,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/xiatian.github.io/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E-%E5%A4%8F%E5%A4%A9/">
-                                <span class="chip bg-color">更新说明,夏天</span>
+                            <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF-%E9%9D%A2%E8%AF%95-js-vue-react/">
+                                <span class="chip bg-color">前端,面试,js,vue,react</span>
                             </a>
                         
                     </div>
@@ -449,7 +449,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-28
+                    2021-09-07
                 </div>
                 
 
@@ -474,193 +474,133 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>微信公众号排版工具。问题或建议，请公众号留言。**<a href="#jump_8">程序员翻身</a>**</p>
+<p>面试随记。</p>
 </blockquote>
-<p>写文章、发布文章<br>首先在博客根目录下右键打开git bash，安装一个扩展npm i hexo-deployer-git。</p>
-<p>然后输入hexo new post “article title”，新建一篇文章。</p>
-<p>然后打开D:\study\program\blog\source_posts的目录，可以发现下面多了一个文件夹和一个.md文件，一个用来存放你的图片等数据，另一个就是你的文章文件啦。</p>
-<p>编写完markdown文件后，根目录下输入hexo g生成静态网页，然后输入hexo s可以本地预览效果，最后输入hexo d上传到github上。这时打开你的github.io主页就能看到发布的文章啦。</p>
-<h2 id="1-Markdown-com-cn-简介"><a href="#1-Markdown-com-cn-简介" class="headerlink" title="1 Markdown.com.cn 简介"></a>1 Markdown.com.cn 简介</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">cnpm init <span class="token operator">--</span>yes
-cnpm i webpack<span class="token operator">-</span>cli <span class="token operator">--</span>save<span class="token operator">-</span>dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">cnpm i webpack<span class="token operator">-</span>cli <span class="token operator">--</span>save<span class="token operator">-</span>dev<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">cnpm install css<span class="token operator">-</span>loader <span class="token operator">--</span>save<span class="token operator">-</span>dev
-cnpm install style<span class="token operator">-</span>loader <span class="token operator">--</span>save<span class="token operator">-</span>dev
-cnpm install url<span class="token operator">-</span>loader <span class="token operator">--</span>save<span class="token operator">-</span>dev
-cnpm install html<span class="token operator">-</span>webpack<span class="token operator">-</span>plugin <span class="token operator">--</span>save<span class="token operator">-</span>dev
-cnpm install copy<span class="token operator">-</span>webpack<span class="token operator">-</span>plugin <span class="token operator">--</span>save<span class="token operator">-</span>dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="1-vue，react相关"><a href="#1-vue，react相关" class="headerlink" title="1.vue，react相关"></a>1.vue，react相关</h2><h3 id="1-1-vuex存储什么？vuex中的方法有哪些？"><a href="#1-1-vuex存储什么？vuex中的方法有哪些？" class="headerlink" title="1.1 vuex存储什么？vuex中的方法有哪些？"></a>1.1 vuex存储什么？vuex中的方法有哪些？</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">vuex是状态存储
+store下有 
+   state：状态存储
+   getter：调用方法查询，可进行过滤
+   mutation：提交修改，改变state唯一方式
+   action：异步操作，执行完后需要 commit mutation 修改状态
+   module：分解成多个子模块，每个都是一个store，有自己的state、getter、action、mutation和module<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="1-2-原型链，有什么特点？"><a href="#1-2-原型链，有什么特点？" class="headerlink" title="1.2 原型链，有什么特点？"></a>1.2 原型链，有什么特点？</h3><pre class="line-numbers language-none"><code class="language-none">当我们访问一个对象的属性时，如果这个对象内部不存在这个属性，那么它就会去它的原型对象里找这个属性，这个原型对象又会有自己的原型，于是就这样一直找下去，也就是原型链的概念。原型链的尽头一般来说都是Object.prototype null <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="1-3-什么是-React-Hooks？"><a href="#1-3-什么是-React-Hooks？" class="headerlink" title="1.3 什么是 React Hooks？"></a>1.3 什么是 React Hooks？</h3><pre class="line-numbers language-none"><code class="language-none">Hooks是 React 16.8 中的新添加内容。它们允许在不编写类的情况下使用state和其他 React 特性。使用 Hooks，可以从组件中提取有状态逻辑，这样就可以独立地测试和重用它。Hooks 允许咱们在不改变组件层次结构的情况下重用有状态逻辑，这样在许多组件之间或与社区共享 Hooks 变得很容易。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="1-4-使用-React-Hooks-好处是啥？"><a href="#1-4-使用-React-Hooks-好处是啥？" class="headerlink" title="1.4 使用 React Hooks 好处是啥？"></a>1.4 使用 React Hooks 好处是啥？</h3><pre class="line-numbers language-none"><code class="language-none">首先，Hooks 通常支持提取和重用跨多个组件通用的有状态逻辑，而无需承担高阶组件或渲染 props 的负担。Hooks 可以轻松地操作函数组件的状态，而不需要将它们转换为类组件。
 
-
-
-
-
-
-
-<ul>
-<li>支持微信公众号、知乎和稀土掘金</li>
-<li>点击右上方对应图标，一键复制到各平台</li>
-</ul>
-<h2 id="2-Markdown语法教程"><a href="#2-Markdown语法教程" class="headerlink" title="2 Markdown语法教程"></a>2 Markdown语法教程</h2><h3 id="2-1-标题站"><a href="#2-1-标题站" class="headerlink" title="2.1 标题站"></a>2.1 标题站</h3><p>不同数量的<code>#</code>可以完成不同的标题，如下：</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h3 id="2-2-字体"><a href="#2-2-字体" class="headerlink" title="2.2 字体"></a>2.2 字体</h3><p>粗体、斜体、粗体和斜体，删除线，需要在文字前后加不同的标记符号。如下：</p>
-<p><strong>这个是粗体</strong></p>
-<p><em>这个是斜体</em></p>
-<p><em><strong>这个是粗体加斜体</strong></em></p>
-<p>~这里想用删除线~~</p>
-<p>注：如果想给字体换颜色、字体或者居中显示，需要使用内嵌HTML来实现。</p>
-<h3 id="2-3-无序列表"><a href="#2-3-无序列表" class="headerlink" title="2.3 无序列表"></a>2.3 无序列表</h3><p>无序列表的使用，在符号<code>-</code>后加空格使用。如下：</p>
-<ul>
-<li>无序列表 1</li>
-<li>无序列表 2</li>
-<li>无序列表 3</li>
-</ul>
-<p>如果要控制列表的层级，则需要在符号<code>-</code>前使用空格。如下：</p>
-<ul>
-<li>无序列表 1</li>
-<li>无序列表 2<ul>
-<li>无序列表 2.1</li>
-<li>无序列表 2.2</li>
-</ul>
-</li>
-</ul>
-<p><strong>由于微信原因，最多支持到二级列表</strong>。</p>
-<h3 id="2-4-有序列表"><a href="#2-4-有序列表" class="headerlink" title="2.4 有序列表"></a>2.4 有序列表</h3><p>有序列表的使用，在数字及符号<code>.</code>后加空格后输入内容，如下：</p>
-<ol>
-<li>有序列表 1</li>
-<li>有序列表 2</li>
-<li>有序列表 3</li>
-</ol>
-<h3 id="2-5-引用"><a href="#2-5-引用" class="headerlink" title="2.5 引用"></a>2.5 引用</h3><p>引用的格式是在符号<code>&gt;</code>后面书写文字。如下：</p>
-<blockquote>
-<p>读一本好书，就是在和高尚的人谈话。 ——歌德</p>
-</blockquote>
-<blockquote>
-<p>雇用制度对工人不利，但工人根本无力摆脱这个制度。 ——阮一峰</p>
-</blockquote>
-<h3 id="2-7-链接"><a href="#2-7-链接" class="headerlink" title="2.7 链接"></a>2.7 链接</h3><p>微信公众号仅支持公众号文章链接，即域名为<code>https://mp.weixin.qq.com/</code>的合法链接。使用方法如下所示：</p>
-<p>对于该论述，欢迎读者查阅之前发过的文章，<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/s5IhxV2ooX3JN_X416nidA">你是《未来世界的幸存者》么？</a><br><a id="jump_8"></a></p>
-<h3 id="2-8-图片"><a href="#2-8-图片" class="headerlink" title="2.8 图片"></a>2.8 图片</h3><p>插入图片，格式如下：</p>
-<p><img src="https://www.nginx.cn/wp-content/uploads/2020/03/qrcode_for_gh_82cf87d482f0_258.jpg" alt="这里写图片描述"></p>
-<p>支持 jpg、png、gif、svg 等图片格式，<strong>其中 svg 文件仅可在微信公众平台中使用</strong>，svg 文件示例如下：</p>
-<p><img src="https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg"></p>
-<p>支持图片<strong>拖拽和截图粘贴</strong>到编辑器中。</p>
-<p>注：支持图片 <em><strong>拖拽和截图粘贴</strong></em> 到编辑器中，仅支持 https 的图片，图片粘贴到微信时会自动上传微信服务器。</p>
-<h3 id="2-9-分割线"><a href="#2-9-分割线" class="headerlink" title="2.9 分割线"></a>2.9 分割线</h3><p>可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：</p>
-<hr>
-<h3 id="2-10-表格"><a href="#2-10-表格" class="headerlink" title="2.10 表格"></a>2.10 表格</h3><p>可以使用冒号来定义表格的对齐方式，如下：</p>
+Hooks 在类中不起作用，通过使用它们，咱们可以完全避免使用生命周期方法，例如 componentDidMount、componentDidUpdate、componentWillUnmount。相反，使用像useEffect这样的内置钩子。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="1-5-Vue-中-computed-和-watch-有什么区别"><a href="#1-5-Vue-中-computed-和-watch-有什么区别" class="headerlink" title="1.5 Vue 中 computed 和 watch 有什么区别"></a>1.5 Vue 中 computed 和 watch 有什么区别</h3><pre class="line-numbers language-none"><code class="language-none">1.计算属性 computed：
+（1）支持缓存，只有依赖数据发生变化时，才会重新进行计算函数；
+（2）计算属性内不支持异步操作；
+（3）计算属性的函数中都有一个 get(默认具有，获取计算属性)和 set(手动添加，设置计算属性)方法；
+（4）计算属性是自动监听依赖值的变化，从而动态返回内容。
+2.watch:
+(1) 不支持缓存，只要数据发生变化，就会执行侦听函数；
+(2) 侦听属性内支持异步操作；
+(3) 侦听属性的值可以是一个对象，接收 handler 回调，deep，immediate 三个属性；
+(3) 监听是一个过程，在监听的值变化时，可以触发一个回调，并做一些其他事情。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="1-6-vue3-Proxy-里面的一些方法"><a href="#1-6-vue3-Proxy-里面的一些方法" class="headerlink" title="1.6 vue3 Proxy  里面的一些方法"></a>1.6 vue3 Proxy  里面的一些方法</h3><p><img src="https://z3.ax1x.com/2021/09/07/hozZaF.png" alt="proxy里面的一些方法"></p>
+<h2 id="2-js-css相关"><a href="#2-js-css相关" class="headerlink" title="2.js css相关"></a>2.js css相关</h2><h3 id="2-1-类数组转数组"><a href="#2-1-类数组转数组" class="headerlink" title="2.1 类数组转数组"></a>2.1 类数组转数组</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token number">2</span>、Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token number">3</span>、扩展运算符（…） <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-2-说说你对闭包的理解"><a href="#2-2-说说你对闭包的理解" class="headerlink" title="2.2 说说你对闭包的理解"></a>2.2 说说你对闭包的理解</h3><pre class="line-numbers language-none"><code class="language-none">使用闭包主要是为了设计私有的方法和变量。
+闭包的优点是可以避免全局变量的污染；缺点是闭包会常驻内存，增加内存使用量，使用不当很容易造成内存泄漏。在JavaScript中，函数即闭包，只有函数才会产生作用域。
+闭包有3个特性：
+（1）函数嵌套函数。
+（2）在函数内部可以引用外部的参数和变量。
+（3）参数和变量不会以垃圾回收机制回收。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-3-谈一谈你对this的理解，以及在各种环境下的this在浏览器里"><a href="#2-3-谈一谈你对this的理解，以及在各种环境下的this在浏览器里" class="headerlink" title="2.3 谈一谈你对this的理解，以及在各种环境下的this在浏览器里"></a>2.3 谈一谈你对this的理解，以及在各种环境下的this在浏览器里</h3><pre class="line-numbers language-none"><code class="language-none">在全局范围内this指向window对象
+在函数中，this永远指向最后调用他的那个对象(箭头函数除外)。
+在构造函数中，this指向new出来的新对象。
+call、apply、bind中的this被强绑定在指定的那个对象上。
+箭头函数this为父作用域的this，不是调用时的this。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-4-从输入-URL-到页面展示到底发生了什么？"><a href="#2-4-从输入-URL-到页面展示到底发生了什么？" class="headerlink" title="2.4 从输入 URL 到页面展示到底发生了什么？"></a>2.4 从输入 URL 到页面展示到底发生了什么？</h3><pre class="line-numbers language-none"><code class="language-none">1、输入地址
+2、浏览器查找域名的 IP 地址
+3、浏览器向 web 服务器发送一个 HTTP 请求
+4、服务器的永久重定向响应
+6、服务器处理请求
+7、服务器返回一个 HTTP 响应
+8、浏览器显示 HTML
+9、浏览器发送请求获取嵌入在 HTML 中的资源（如图片、音频、视频、CSS、JS等等）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-5-页面渲染html的过程"><a href="#2-5-页面渲染html的过程" class="headerlink" title="2.5 页面渲染html的过程"></a>2.5 页面渲染html的过程</h3><pre class="line-numbers language-none"><code class="language-none">1.解析HTML文件，创建DOM树（自上而下）
+2.解析CSS,形成CSS对象模型
+3.将CSS与DOM合并，构建渲染树
+4、布局与绘制，重绘与重排<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-6-重绘与重排"><a href="#2-6-重绘与重排" class="headerlink" title="2.6 重绘与重排"></a>2.6 重绘与重排</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">当一个元素的外观发生改变，但没有改变布局,重新把元素外观绘制出来的过程，叫做重绘。
+常见的引起重绘的属性：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <table>
 <thead>
 <tr>
-<th align="left">姓名</th>
-<th align="center">年龄</th>
-<th align="right">工作</th>
+<th align="left">属性：</th>
+<th align="center">–</th>
+<th align="right">–</th>
+<th align="right">–</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">小可爱</td>
-<td align="center">18</td>
-<td align="right">吃可爱多</td>
+<td align="left">color</td>
+<td align="center">border-style</td>
+<td align="right">visibility</td>
+<td align="right">background</td>
 </tr>
 <tr>
-<td align="left">小小勇敢</td>
-<td align="center">20</td>
-<td align="right">爬棵勇敢树</td>
+<td align="left">text-decoration</td>
+<td align="center">background-image</td>
+<td align="right">background-position</td>
+<td align="right">background-repeat</td>
 </tr>
 <tr>
-<td align="left">小小小机智</td>
-<td align="center">22</td>
-<td align="right">看一本机智书</td>
+<td align="left">outline-color</td>
+<td align="center">outline</td>
+<td align="right">outline-style</td>
+<td align="right">border-radius</td>
+</tr>
+<tr>
+<td align="left">outline-width</td>
+<td align="center">box-shadow</td>
+<td align="right">background-size</td>
+<td align="right"></td>
 </tr>
 </tbody></table>
-<h2 id="3-特殊语法"><a href="#3-特殊语法" class="headerlink" title="3. 特殊语法"></a>3. 特殊语法</h2><h3 id="3-1-脚注"><a href="#3-1-脚注" class="headerlink" title="3.1 脚注"></a>3.1 脚注</h3><blockquote>
-<p>支持平台：微信公众号、知乎。</p>
-</blockquote>
-<p>脚注与链接的区别如下所示：</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">链接：<span class="token url">[<span class="token content">文字</span>](<span class="token url">链接</span>)</span>
-脚注：<span class="token url">[<span class="token content">文字</span>](<span class="token url">脚注解释</span> <span class="token string">"脚注名字"</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">重排也叫回流，简单的说就是重新生成布局，重新排列元素。
+下面情况会发生重排：
 
-<p>有人认为在<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Front-end_web_development" title="Front-end web development">大前端时代</a>的背景下，移动端开发（Android、IOS）将逐步退出历史舞台。</p>
-<p><a href="%E6%98%AF%E6%8C%87%E6%8E%8C%E6%8F%A1%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%EF%BC%8C%E5%B9%B6%E8%83%BD%E5%88%A9%E7%94%A8%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%BA%A7%E5%93%81%E7%9A%84%E4%BA%BA%E3%80%82" title="什么是全栈工程师">全栈工程师</a>在业务开发流程中起到了至关重要的作用。</p>
-<p>脚注内容请拉到最下面观看。</p>
-<h3 id="3-2-代码块"><a href="#3-2-代码块" class="headerlink" title="3.2 代码块"></a>3.2 代码块</h3><blockquote>
-<p>支持平台：微信代码主题仅支持微信公众号！其他主题无限制。</p>
-</blockquote>
-<p>如果在一个行内需要引用代码，只要用反引号引起来就好，如下：</p>
-<p>Use the <code>printf()</code> function.</p>
-<p>在需要高亮的代码块的前一行及后一行使用三个反引号，同时<strong>第一行反引号后面表示代码块所使用的语言</strong>，如下：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// FileName: HelloWorld.java</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span> <span class="token punctuation">{</span>
-  <span class="token comment">// Java 入口程序，程序从此入口</span>
-  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello,World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 向控制台打印一条语句</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    1.页面初始渲染，这是开销最大的一次重排
+    2.添加/删除可见的DOM元素
+    3.改变元素位置
+    4.改变元素尺寸，比如边距、填充、边框、宽度和高度等
+    5.改变元素内容，比如文字数量，图片大小等
+    6.改变元素字体大小
+    7.改变浏览器窗口尺寸，比如resize事件发生时
+    8.激活CSS伪类（例如：:hover）
+    9.设置 style 属性的值，因为通过设置style属性改变结点样式的话，每一次设置都会触发一次reflow
+    10.查询某些属性或调用某些计算方法：offsetWidth、offsetHeight等，除此之外，当我们调用 getComputedStyle方法，或者IE里的 currentStyle 时，也会触发重排，原理是一样的，都为求一个“即时性”和“准确性”。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>支持以下语言种类：</p>
-<pre class="line-numbers language-none"><code class="language-none">bash
-clojure，cpp，cs，css
-dart，dockerfile, diff
-erlang
-go，gradle，groovy
-haskell
-java，javascript，json，julia
-kotlin
-lisp，lua
-makefile，markdown，matlab
-objectivec
-perl，php，python
-r，ruby，rust
-scala，shell，sql，swift
-tex，typescript
-verilog，vhdl
-xml
-yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-7-call和apply的区别"><a href="#2-7-call和apply的区别" class="headerlink" title="2.7 call和apply的区别"></a>2.7 call和apply的区别</h3><pre class="line-numbers language-none"><code class="language-none">call apply的作用都是改变this指向
+call：call() 方法和apply() 方法作用相同, 区别在于接收参数的方式不同, call() 需要列举所有传入的所有参数。
+apply：apply()方法需要将实参封装到一个数组中统一传递（即使只有实参只有一个，也要放到数组中）。严格来说只接收argument对象和数组两种形式。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-8-new操作符具体干了什么呢"><a href="#2-8-new操作符具体干了什么呢" class="headerlink" title="2.8 new操作符具体干了什么呢?"></a>2.8 new操作符具体干了什么呢?</h3><pre class="line-numbers language-none"><code class="language-none">1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
+2、属性和方法被加入到 this 引用的对象中。
+3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-9-单向数据流和双向数据流"><a href="#2-9-单向数据流和双向数据流" class="headerlink" title="2.9 单向数据流和双向数据流"></a>2.9 单向数据流和双向数据流</h3><pre class="line-numbers language-none"><code class="language-none">单向数据流：所有状态的改变可记录、可跟踪，源头易追溯；所有数据只有一份，组件数据只有唯一的入口和出口，使得程序更直观更容易理解，有利于应用的可维护性；一旦数据变化，就去更新页面(data-页面)，但是没有(页面-data)；如果用户在页面上做了变动，那么就手动收集起来(双向是自动)，合并到原有的数据中
+双向数据流：无论数据改变，或是用户操作，都能带来互相的变动，自动更新。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="2-10-slice（）与splice（）的用法和区别"><a href="#2-10-slice（）与splice（）的用法和区别" class="headerlink" title="2.10 slice（）与splice（）的用法和区别"></a>2.10 slice（）与splice（）的用法和区别</h3><pre class="line-numbers language-mardown" data-language="mardown"><code class="language-mardown">1.slice(start，end)
 
-<p>如果想要更换代码高亮样式，可在上方<strong>代码主题</strong>中挑选。</p>
-<p>其中<strong>微信代码主题与微信官方一致</strong>，有以下注意事项：</p>
-<ul>
-<li>带行号且不换行，代码大小与官方一致</li>
-<li>需要在代码块处标志语言，否则无法高亮</li>
-<li>粘贴到公众号后，用鼠标点代码块内外一次，完成高亮</li>
-</ul>
-<p>diff 不能同时和其他语言的高亮同时显示，且需要调整代码主题为微信代码主题以外的代码主题才能看到 diff 效果，使用效果如下:</p>
-<pre class="line-numbers language-diff" data-language="diff"><code class="language-diff"><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line"> 新增项
-</span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line"> 删除项</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+- 从start开始截取到end但是不包括end
+- 返回值为截取出来的元素的集合
+- 原始的数组不会发生变化
 
-<p><strong>其他主题不带行号，可自定义是否换行，代码大小与当前编辑器一致</strong></p>
-<h3 id="3-3-数学公式"><a href="#3-3-数学公式" class="headerlink" title="3.3 数学公式"></a>3.3 数学公式</h3><blockquote>
-<p>支持平台：微信公众号、知乎。</p>
-</blockquote>
-<p>行内公式使用方法，比如这个化学公式：$\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$</p>
-<p>块公式使用方法如下：</p>
-<p>$$H(D_2) = -\left(\frac{2}{4}\log_2 \frac{2}{4} + \frac{2}{4}\log_2 \frac{2}{4}\right) = 1$$</p>
-<p>矩阵：</p>
-<p>$$<br>  \begin{pmatrix}<br>  1 &amp; a_1 &amp; a_1^2 &amp; \cdots &amp; a_1^n \<br>  1 &amp; a_2 &amp; a_2^2 &amp; \cdots &amp; a_2^n \<br>  \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>  1 &amp; a_m &amp; a_m^2 &amp; \cdots &amp; a_m^n \<br>  \end{pmatrix}<br>$$</p>
-<p>公式由于微信不支持，目前的解决方案是转成 svg 放到微信中，无需调整，矢量不失真。</p>
-<p>目前测试如果公式量过大，在 Chrome 下会存在粘贴后无响应，但是在 Firefox 中始终能够成功。</p>
-<h3 id="3-4-TOC"><a href="#3-4-TOC" class="headerlink" title="3.4 TOC"></a>3.4 TOC</h3><blockquote>
-<p>支持平台：微信公众号、知乎。</p>
-</blockquote>
-<p>TOC 全称为 Table of Content，列出全部标题。</p>
-<p>[TOC]</p>
-<p>由于微信只支持到二级列表，本工具仅支持二级标题和三级标题的显示。</p>
-<h3 id="3-5-注音符号"><a href="#3-5-注音符号" class="headerlink" title="3.5 注音符号"></a>3.5 注音符号</h3><blockquote>
-<p>支持平台：微信公众号。</p>
-</blockquote>
-<p>支持注音符号，用法如下：</p>
-<p>Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！</p>
-<h3 id="3-6-横屏滑动幻灯片"><a href="#3-6-横屏滑动幻灯片" class="headerlink" title="3.6 横屏滑动幻灯片"></a>3.6 横屏滑动幻灯片</h3><blockquote>
-<p>支持平台：微信公众号。</p>
-</blockquote>
-<p>通过<code>&lt;![](url),![](url)&gt;</code>这种语法设置横屏滑动滑动片，具体用法如下：</p>
-<p><img src="https://z3.ax1x.com/2021/08/29/hGBbHH.png" alt="avatar"></p>
-<h2 id="4-其他语法"><a href="#4-其他语法" class="headerlink" title="4 其他语法"></a>4 其他语法</h2><h3 id="4-1-HTML"><a href="#4-1-HTML" class="headerlink" title="4.1 HTML"></a>4.1 HTML</h3><p>支持原生 HTML 语法，请写内联样式，如下：</p>
-<p><span style="display:block;text-align:right;color:orangered;">橙色居右</span><br><span style="display:block;text-align:center;color:orangered;">橙色居中</span></p>
-<h3 id="4-2-UML"><a href="#4-2-UML" class="headerlink" title="4.2 UML"></a>4.2 UML</h3><p>不支持，推荐使用开源工具<code>https://draw.io/</code>制作后再导入图片</p>
-<h2 id="5-致谢"><a href="#5-致谢" class="headerlink" title="5 致谢"></a>5 致谢</h2><ul>
-<li>编程如画 <a target="_blank" rel="noopener" href="https://github.com/mdnice/markdown-nice" title="插件原作者">markdown-nice-docs</a></li>
-<li>歌词经理 <a target="_blank" rel="noopener" href="https://github.com/lyricat/wechat-format" title="灵感来源">wechat-fromat</a></li>
-<li>颜家大少 <a target="_blank" rel="noopener" href="http://md.aclickall.com/" title="MdA2All">MD2All</a></li>
-</ul>
+2. splice(start,deleteCount,item1,item2…..);
 
+- start参数 开始的位置
+- deleteCount 要截取的个数
+- 后面的items为要添加的元素
+- 如果deleteCount为0，则表示不删除元素，从start位置开始添加后面的几个元素到原始的数组里面
+- 返回值为由被删除的元素组成的一个数组。如果只删除了一个元素，则返回只包含一个元素的数组。如果没有删除元素，则返回空数组
+- 这个方法会改变原始数组，数组的长度会发生变化
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-11-Event-Loop"><a href="#2-11-Event-Loop" class="headerlink" title="2.11  Event Loop"></a>2.11  Event Loop</h3><pre class="line-numbers language-none"><code class="language-none">1.浏览器的事件循环（event loop）中分成宏任务和微任务。JS 中任务分成同步任务和异步任务。
+2.JS 中主栈执行的大多数的任务，例如：定时器，事件绑定，ajax，回调函数，node中fs操作模块等就是宏任务
+3.promise, async/await, process.nextTick等就是微任务。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -686,7 +626,7 @@ yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xiatiancheng.github.io/xiatian.github.io/2021/08/28/article-title/">https://xiatiancheng.github.io/xiatian.github.io/2021/08/28/article-title/</a>
+                    <a href="https://xiatiancheng.github.io/xiatian.github.io/2021/09/07/jiang-yi-jiang-wo-yu-dao-de-mian-shi-ti/">https://xiatiancheng.github.io/xiatian.github.io/2021/09/07/jiang-yi-jiang-wo-yu-dao-de-mian-shi-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -724,8 +664,8 @@ yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                     
                         <div class="article-tag">
                             
-                                <a href="/xiatian.github.io/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E-%E5%A4%8F%E5%A4%A9/">
-                                    <span class="chip bg-color">更新说明,夏天</span>
+                                <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF-%E9%9D%A2%E8%AF%95-js-vue-react/">
+                                    <span class="chip bg-color">前端,面试,js,vue,react</span>
                                 </a>
                             
                         </div>
@@ -1158,9 +1098,10 @@ yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/xiatian.github.io/2021/09/07/jiang-yi-jiang-wo-yu-dao-de-mian-shi-ti/">
                     <div class="card-image">
@@ -1178,9 +1119,9 @@ yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1189,6 +1130,7 @@ yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1204,7 +1146,7 @@ yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/xiatian.github.io/2021/08/28/article-title/">
@@ -1234,7 +1176,6 @@ yaml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
