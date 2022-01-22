@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="面试随记, 夏天的空">
+    <meta name="keywords" content="此篇记录下vue2,3相关面试题, 夏天的空">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>面试随记 | 夏天的空</title>
+    <title>此篇记录下vue2,3相关面试题 | 夏天的空</title>
     <link rel="icon" type="image/png" href="/xiatian.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/xiatian.github.io/libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/xiatian.github.io/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/xiatian.github.io/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">面试随记</h1>
+                    <h1 class="description center-align post-title">此篇记录下vue2,3相关面试题</h1>
                 </div>
             </div>
         </div>
@@ -433,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF-%E9%9D%A2%E8%AF%95-js-vue-react/">
-                                <span class="chip bg-color">前端,面试,js,vue,react</span>
+                            <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF-react/">
+                                <span class="chip bg-color">前端,react</span>
                             </a>
                         
                     </div>
@@ -449,7 +449,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-07
+                    2022-01-22
                 </div>
                 
 
@@ -473,134 +473,154 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>面试随记。</p>
-</blockquote>
-<h2 id="1-vue，react相关"><a href="#1-vue，react相关" class="headerlink" title="1.vue，react相关"></a>1.vue，react相关</h2><h3 id="1-1-vuex存储什么？vuex中的方法有哪些？"><a href="#1-1-vuex存储什么？vuex中的方法有哪些？" class="headerlink" title="1.1 vuex存储什么？vuex中的方法有哪些？"></a>1.1 vuex存储什么？vuex中的方法有哪些？</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">vuex是状态存储
-store下有 
-   state：状态存储
-   getter：调用方法查询，可进行过滤
-   mutation：提交修改，改变state唯一方式
-   action：异步操作，执行完后需要 commit mutation 修改状态
-   module：分解成多个子模块，每个都是一个store，有自己的state、getter、action、mutation和module<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="1-2-原型链，有什么特点？"><a href="#1-2-原型链，有什么特点？" class="headerlink" title="1.2 原型链，有什么特点？"></a>1.2 原型链，有什么特点？</h3><pre class="line-numbers language-none"><code class="language-none">当我们访问一个对象的属性时，如果这个对象内部不存在这个属性，那么它就会去它的原型对象里找这个属性，这个原型对象又会有自己的原型，于是就这样一直找下去，也就是原型链的概念。原型链的尽头一般来说都是Object.prototype null <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="1-3-什么是-React-Hooks？"><a href="#1-3-什么是-React-Hooks？" class="headerlink" title="1.3 什么是 React Hooks？"></a>1.3 什么是 React Hooks？</h3><pre class="line-numbers language-none"><code class="language-none">Hooks是 React 16.8 中的新添加内容。它们允许在不编写类的情况下使用state和其他 React 特性。使用 Hooks，可以从组件中提取有状态逻辑，这样就可以独立地测试和重用它。Hooks 允许咱们在不改变组件层次结构的情况下重用有状态逻辑，这样在许多组件之间或与社区共享 Hooks 变得很容易。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="1-4-使用-React-Hooks-好处是啥？"><a href="#1-4-使用-React-Hooks-好处是啥？" class="headerlink" title="1.4 使用 React Hooks 好处是啥？"></a>1.4 使用 React Hooks 好处是啥？</h3><pre class="line-numbers language-none"><code class="language-none">首先，Hooks 通常支持提取和重用跨多个组件通用的有状态逻辑，而无需承担高阶组件或渲染 props 的负担。Hooks 可以轻松地操作函数组件的状态，而不需要将它们转换为类组件。
+                <h2 id="1-vue2-gt-vue3生命周期"><a href="#1-vue2-gt-vue3生命周期" class="headerlink" title="1.vue2 -> vue3生命周期"></a>1.vue2 -&gt; vue3生命周期</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">beforeCreate <span class="token operator">-</span><span class="token operator">&gt;</span> 使用 <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+created <span class="token operator">-</span><span class="token operator">&gt;</span> 使用 <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+beforeMount <span class="token operator">-</span><span class="token operator">&gt;</span> onBeforeMount
+mounted <span class="token operator">-</span><span class="token operator">&gt;</span> onMounted
+beforeUpdate <span class="token operator">-</span><span class="token operator">&gt;</span> onBeforeUpdate
+updated <span class="token operator">-</span><span class="token operator">&gt;</span> onUpdated
+beforeDestroy <span class="token operator">-</span><span class="token operator">&gt;</span> onBeforeUnmount
+destroyed <span class="token operator">-</span><span class="token operator">&gt;</span> onUnmounted<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="2-父子组件传值"><a href="#2-父子组件传值" class="headerlink" title="2.父子组件传值"></a>2.父子组件传值</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、父子组件通信
+    <span class="token operator">*</span> props
+    <span class="token operator">*</span> $emit<span class="token operator">/</span>$on
+    <span class="token operator">*</span> $children<span class="token operator">/</span>$parent
+    <span class="token operator">*</span> $attrs<span class="token operator">/</span>$listeners
+    <span class="token operator">*</span> ref
+<span class="token number">2</span>、兄弟组件
+    <span class="token operator">*</span> $parent
+    <span class="token operator">*</span> $root
+    <span class="token operator">*</span> eventbus
+    <span class="token operator">*</span> vuex
+<span class="token number">3</span>、跨层级关系
+    <span class="token operator">*</span> eventbus
+    <span class="token operator">*</span> vuex
+    <span class="token operator">*</span> provide<span class="token operator">/</span>inject
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-Hooks 在类中不起作用，通过使用它们，咱们可以完全避免使用生命周期方法，例如 componentDidMount、componentDidUpdate、componentWillUnmount。相反，使用像useEffect这样的内置钩子。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="1-5-Vue-中-computed-和-watch-有什么区别"><a href="#1-5-Vue-中-computed-和-watch-有什么区别" class="headerlink" title="1.5 Vue 中 computed 和 watch 有什么区别"></a>1.5 Vue 中 computed 和 watch 有什么区别</h3><pre class="line-numbers language-none"><code class="language-none">1.计算属性 computed：
-（1）支持缓存，只有依赖数据发生变化时，才会重新进行计算函数；
-（2）计算属性内不支持异步操作；
-（3）计算属性的函数中都有一个 get(默认具有，获取计算属性)和 set(手动添加，设置计算属性)方法；
-（4）计算属性是自动监听依赖值的变化，从而动态返回内容。
-2.watch:
-(1) 不支持缓存，只要数据发生变化，就会执行侦听函数；
-(2) 侦听属性内支持异步操作；
-(3) 侦听属性的值可以是一个对象，接收 handler 回调，deep，immediate 三个属性；
-(3) 监听是一个过程，在监听的值变化时，可以触发一个回调，并做一些其他事情。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="1-6-vue3-Proxy-里面的一些方法"><a href="#1-6-vue3-Proxy-里面的一些方法" class="headerlink" title="1.6 vue3 Proxy  里面的一些方法"></a>1.6 vue3 Proxy  里面的一些方法</h3><p><img src="https://z3.ax1x.com/2021/09/07/hozZaF.png" alt="proxy里面的一些方法"></p>
-<h2 id="2-js-css相关"><a href="#2-js-css相关" class="headerlink" title="2.js css相关"></a>2.js css相关</h2><h3 id="2-1-类数组转数组"><a href="#2-1-类数组转数组" class="headerlink" title="2.1 类数组转数组"></a>2.1 类数组转数组</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
-<span class="token number">2</span>、Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
-<span class="token number">3</span>、扩展运算符（…） <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-2-说说你对闭包的理解"><a href="#2-2-说说你对闭包的理解" class="headerlink" title="2.2 说说你对闭包的理解"></a>2.2 说说你对闭包的理解</h3><pre class="line-numbers language-none"><code class="language-none">使用闭包主要是为了设计私有的方法和变量。
-闭包的优点是可以避免全局变量的污染；缺点是闭包会常驻内存，增加内存使用量，使用不当很容易造成内存泄漏。在JavaScript中，函数即闭包，只有函数才会产生作用域。
-闭包有3个特性：
-（1）函数嵌套函数。
-（2）在函数内部可以引用外部的参数和变量。
-（3）参数和变量不会以垃圾回收机制回收。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-3-谈一谈你对this的理解，以及在各种环境下的this在浏览器里"><a href="#2-3-谈一谈你对this的理解，以及在各种环境下的this在浏览器里" class="headerlink" title="2.3 谈一谈你对this的理解，以及在各种环境下的this在浏览器里"></a>2.3 谈一谈你对this的理解，以及在各种环境下的this在浏览器里</h3><pre class="line-numbers language-none"><code class="language-none">在全局范围内this指向window对象
-在函数中，this永远指向最后调用他的那个对象(箭头函数除外)。
-在构造函数中，this指向new出来的新对象。
-call、apply、bind中的this被强绑定在指定的那个对象上。
-箭头函数this为父作用域的this，不是调用时的this。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-4-从输入-URL-到页面展示到底发生了什么？"><a href="#2-4-从输入-URL-到页面展示到底发生了什么？" class="headerlink" title="2.4 从输入 URL 到页面展示到底发生了什么？"></a>2.4 从输入 URL 到页面展示到底发生了什么？</h3><pre class="line-numbers language-none"><code class="language-none">1、输入地址
-2、浏览器查找域名的 IP 地址
-3、浏览器向 web 服务器发送一个 HTTP 请求
-4、服务器的永久重定向响应
-6、服务器处理请求
-7、服务器返回一个 HTTP 响应
-8、浏览器显示 HTML
-9、浏览器发送请求获取嵌入在 HTML 中的资源（如图片、音频、视频、CSS、JS等等）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-5-页面渲染html的过程"><a href="#2-5-页面渲染html的过程" class="headerlink" title="2.5 页面渲染html的过程"></a>2.5 页面渲染html的过程</h3><pre class="line-numbers language-none"><code class="language-none">1.解析HTML文件，创建DOM树（自上而下）
-2.解析CSS,形成CSS对象模型
-3.将CSS与DOM合并，构建渲染树
-4、布局与绘制，重绘与重排<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-6-重绘与重排"><a href="#2-6-重绘与重排" class="headerlink" title="2.6 重绘与重排"></a>2.6 重绘与重排</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">当一个元素的外观发生改变，但没有改变布局,重新把元素外观绘制出来的过程，叫做重绘。
-常见的引起重绘的属性：<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<table>
-<thead>
-<tr>
-<th align="left">属性：</th>
-<th align="center">–</th>
-<th align="right">–</th>
-<th align="right">–</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">color</td>
-<td align="center">border-style</td>
-<td align="right">visibility</td>
-<td align="right">background</td>
-</tr>
-<tr>
-<td align="left">text-decoration</td>
-<td align="center">background-image</td>
-<td align="right">background-position</td>
-<td align="right">background-repeat</td>
-</tr>
-<tr>
-<td align="left">outline-color</td>
-<td align="center">outline</td>
-<td align="right">outline-style</td>
-<td align="right">border-radius</td>
-</tr>
-<tr>
-<td align="left">outline-width</td>
-<td align="center">box-shadow</td>
-<td align="right">background-size</td>
-<td align="right"></td>
-</tr>
-</tbody></table>
-<pre class="line-numbers language-none"><code class="language-none">重排也叫回流，简单的说就是重新生成布局，重新排列元素。
-下面情况会发生重排：
+<h2 id="3-data为什么是一个函数而不是对象"><a href="#3-data为什么是一个函数而不是对象" class="headerlink" title="3.data为什么是一个函数而不是对象"></a>3.data为什么是一个函数而不是对象</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">函数每次执行都会返回全新data对象实例
+<span class="token operator">--</span><span class="token operator">-</span>
+在<span class="token constant">JS</span>当中实例是通过构造函数来创建的，每个构造函数可以<span class="token keyword">new</span>出很多个实例，那么每个实例都会继承原型上的方法或属性。
+因为使用对象的话，每个实例（组件）上使用的data数据是相互影响的，这当然就不是我们想要的了。对象是对于内存地址的引用，直接定义个对象的话组件之间都会使用这个对象，这样会造成组件之间数据相互影响。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-    1.页面初始渲染，这是开销最大的一次重排
-    2.添加/删除可见的DOM元素
-    3.改变元素位置
-    4.改变元素尺寸，比如边距、填充、边框、宽度和高度等
-    5.改变元素内容，比如文字数量，图片大小等
-    6.改变元素字体大小
-    7.改变浏览器窗口尺寸，比如resize事件发生时
-    8.激活CSS伪类（例如：:hover）
-    9.设置 style 属性的值，因为通过设置style属性改变结点样式的话，每一次设置都会触发一次reflow
-    10.查询某些属性或调用某些计算方法：offsetWidth、offsetHeight等，除此之外，当我们调用 getComputedStyle方法，或者IE里的 currentStyle 时，也会触发重排，原理是一样的，都为求一个“即时性”和“准确性”。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="4-v-if和v-for哪个优先级高"><a href="#4-v-if和v-for哪个优先级高" class="headerlink" title="4.v-if和v-for哪个优先级高"></a>4.v-if和v-for哪个优先级高</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、v<span class="token operator">-</span><span class="token keyword">for</span>优先于v<span class="token operator">-</span><span class="token keyword">if</span> 被解析
+<span class="token number">2</span>、如果同时出现，每次渲染都会先执行循环在判断条件，无论如何，循环都不可避免，浪费了性能
+<span class="token number">3</span>、要避免出现这种情况，可以在外层嵌套 template，在这一层加v<span class="token operator">-</span><span class="token keyword">if</span>，然后内部进行v<span class="token operator">-</span><span class="token keyword">for</span>循环
+<span class="token number">4</span>、如果条件出现在循环内部，可通过计算属性提前过滤掉那些不需要显示的项<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>so ~ : ?? 的意思是，如果 ?? 左边的值是 null 或者 undefined，那么就返回右边的值。</p>
+<h2 id="5-你知道vue中key的作用和工作原理吗？说说你对它的理解"><a href="#5-你知道vue中key的作用和工作原理吗？说说你对它的理解" class="headerlink" title="5.你知道vue中key的作用和工作原理吗？说说你对它的理解"></a>5.你知道vue中key的作用和工作原理吗？说说你对它的理解</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、key 的作用主要就是为了高效的更新<span class="token constant">DOM</span>，其原理是vue在patch过程中通过key可以精准判断两个节点是否是同一个，从而避免频繁的更新相同元素，使得整个patch过程更加高效，减少<span class="token constant">DOM</span>操作量，提高性能。
+<span class="token number">2</span>、如果不设置key，还可能在列表更新时引发一些隐藏bug
+<span class="token number">3</span>、vue中在使用相同标签名元素的过度切换时，也会使用到key属性，其目的也是为了让vue可以区分它们，否则vue 只会替换其内部属性而不会触发过度效果。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="2-7-call和apply的区别"><a href="#2-7-call和apply的区别" class="headerlink" title="2.7 call和apply的区别"></a>2.7 call和apply的区别</h3><pre class="line-numbers language-none"><code class="language-none">call apply的作用都是改变this指向
-call：call() 方法和apply() 方法作用相同, 区别在于接收参数的方式不同, call() 需要列举所有传入的所有参数。
-apply：apply()方法需要将实参封装到一个数组中统一传递（即使只有实参只有一个，也要放到数组中）。严格来说只接收argument对象和数组两种形式。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-8-new操作符具体干了什么呢"><a href="#2-8-new操作符具体干了什么呢" class="headerlink" title="2.8 new操作符具体干了什么呢?"></a>2.8 new操作符具体干了什么呢?</h3><pre class="line-numbers language-none"><code class="language-none">1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
-2、属性和方法被加入到 this 引用的对象中。
-3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-9-单向数据流和双向数据流"><a href="#2-9-单向数据流和双向数据流" class="headerlink" title="2.9 单向数据流和双向数据流"></a>2.9 单向数据流和双向数据流</h3><pre class="line-numbers language-none"><code class="language-none">单向数据流：所有状态的改变可记录、可跟踪，源头易追溯；所有数据只有一份，组件数据只有唯一的入口和出口，使得程序更直观更容易理解，有利于应用的可维护性；一旦数据变化，就去更新页面(data-页面)，但是没有(页面-data)；如果用户在页面上做了变动，那么就手动收集起来(双向是自动)，合并到原有的数据中
-双向数据流：无论数据改变，或是用户操作，都能带来互相的变动，自动更新。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="2-10-slice（）与splice（）的用法和区别"><a href="#2-10-slice（）与splice（）的用法和区别" class="headerlink" title="2.10 slice（）与splice（）的用法和区别"></a>2.10 slice（）与splice（）的用法和区别</h3><pre class="line-numbers language-mardown" data-language="mardown"><code class="language-mardown">1.slice(start，end)
 
-- 从start开始截取到end但是不包括end
-- 返回值为截取出来的元素的集合
-- 原始的数组不会发生变化
+<h2 id="6-谈谈你对MVC、MVP和MVVM的理解"><a href="#6-谈谈你对MVC、MVP和MVVM的理解" class="headerlink" title="6.谈谈你对MVC、MVP和MVVM的理解"></a>6.谈谈你对MVC、MVP和MVVM的理解</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、这三个都是框架模式，它们设计的目标都是解决Model和View的耦合问题
+<span class="token number">2</span>、<span class="token constant">MVC</span>模式出现比较早，主要应用在后端，在前端领域的早期也有应用，如Backbone<span class="token punctuation">.</span>js。它的优点是分层清晰，缺点是数据流混乱，灵活性带来的维护性问题
+<span class="token number">3</span>、<span class="token constant">MVP</span>模式是<span class="token constant">MVC</span>的进化形式，Presenter作为中间层负责<span class="token constant">MV</span>通信，解决了两者耦合问题，但<span class="token constant">P</span>层过于臃肿会导致维护问题
+<span class="token number">4</span>、<span class="token constant">MVVM</span>模式在前端领域有广泛的应用，它不仅解决<span class="token constant">MV</span>耦合问题，还同时解决了维护两者映射关系的大量繁杂代码和<span class="token constant">DOM</span>操作代码，在提高开发效率、可读性同时还保持了优越的性能表现。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-2. splice(start,deleteCount,item1,item2…..);
+<h2 id="7-你了解哪些vue性能优化的方法"><a href="#7-你了解哪些vue性能优化的方法" class="headerlink" title="7.你了解哪些vue性能优化的方法"></a>7.你了解哪些vue性能优化的方法</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、路由懒加载
+<span class="token number">2</span>、keep<span class="token operator">-</span>alive缓存页面
+<span class="token number">3</span>、v<span class="token operator">-</span>show复用<span class="token constant">DOM</span>
+<span class="token number">4</span>、v<span class="token operator">-</span><span class="token keyword">for</span>遍历避免同时使用v<span class="token operator">-</span><span class="token keyword">if</span>
+<span class="token number">5</span>、长列表性能优化
+    <span class="token operator">*</span> 纯数据，非响应式的可以 使用 object<span class="token punctuation">.</span>freeze 冻结
+    <span class="token operator">*</span> 大数据长列表，可采用虚拟滚动，只渲染少部分内容 （vue<span class="token operator">-</span>virtual<span class="token operator">-</span>scroller、vue<span class="token operator">-</span>virtual<span class="token operator">-</span>scroll<span class="token operator">-</span>list）
+<span class="token number">6</span>、事件的销毁
+<span class="token number">7</span>、图片的懒加载 （vue<span class="token operator">-</span>lazyload）
+<span class="token number">8</span>、第三方插件按需引入
+<span class="token number">9</span>、无状态组件标记为函数组件 functional
+<span class="token number">10</span>、子组件分割
+<span class="token number">11</span>、变量本地化
+<span class="token number">12</span>、<span class="token constant">SSR</span> （<span class="token constant">SEO</span>、首屏渲染）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-- start参数 开始的位置
-- deleteCount 要截取的个数
-- 后面的items为要添加的元素
-- 如果deleteCount为0，则表示不删除元素，从start位置开始添加后面的几个元素到原始的数组里面
-- 返回值为由被删除的元素组成的一个数组。如果只删除了一个元素，则返回只包含一个元素的数组。如果没有删除元素，则返回空数组
-- 这个方法会改变原始数组，数组的长度会发生变化
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-11-Event-Loop"><a href="#2-11-Event-Loop" class="headerlink" title="2.11  Event Loop"></a>2.11  Event Loop</h3><pre class="line-numbers language-none"><code class="language-none">1.浏览器的事件循环（event loop）中分成宏任务和微任务。JS 中任务分成同步任务和异步任务。
-2.JS 中主栈执行的大多数的任务，例如：定时器，事件绑定，ajax，回调函数，node中fs操作模块等就是宏任务
-3.promise, async/await, process.nextTick等就是微任务。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="7-vue3新特性"><a href="#7-vue3新特性" class="headerlink" title="7.vue3新特性"></a>7.vue3新特性</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、更快
+
+    <span class="token operator">*</span> 虚拟<span class="token constant">DOM</span>重写（编译时提示减少运行时开销，使用更有效的代码创建虚拟节点。组件快速路径<span class="token operator">+</span>单个调用<span class="token operator">+</span>子节点类型检查。跳过不必要的条件分支。js引擎更容易优化）
+    <span class="token operator">*</span> 优化slots的生成（vue3中可以单独重新渲染父级和子级。确保实例正确的跟踪依赖关系。避免不必要的父子组件重新渲染）
+    <span class="token operator">*</span> 静态树提升（内存换时间，Vue3 的编译器将能够检测到什么是静态的，然后将其提升，从而降低了渲染成本。跳过修补整棵树，从而降低渲染成本。即使多次出现也能正常工作 ）
+    <span class="token operator">*</span> 静态属性提升 （Vue3 打补丁时将跳过这些属性不会改变的节点）
+    <span class="token operator">*</span> 基于Proxy的响应式系统 （组件实例初始化的速度提高<span class="token number">100</span>％ 。使用Proxy节省以前一半的内存开销，加快速度，但是存在低浏览器版本的不兼容。为了继续支持<span class="token constant">IE11</span>，Vue3 将发布一个支持旧观察者机制和新 Proxy 版本的构建）
+<span class="token number">2</span>、更小
+    <span class="token operator">*</span> 通过摇树优化核心库体积
+<span class="token number">3</span>、更容易维护
+    <span class="token operator">*</span> <span class="token constant">TS</span><span class="token operator">+</span>模块化 （它不仅会使用 TypeScript，而且许多包被解耦，更加模块化。）
+<span class="token number">4</span>、更加友好
+    <span class="token operator">*</span> 跨平台：编译器核心和运行时核心与平台无关
+<span class="token number">5</span>、更容易使用
+    <span class="token operator">*</span> 改进ts支持，编译器提供更好的类型检查和错误及警告
+    <span class="token operator">*</span> 更好的调试支持
+    <span class="token operator">*</span> 独立的响应式模块
+    <span class="token operator">*</span> Composition <span class="token constant">API</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="7-1-Vue-js-3-0-放弃defineProperty-使用Proxy的原因"><a href="#7-1-Vue-js-3-0-放弃defineProperty-使用Proxy的原因" class="headerlink" title="7.1  Vue.js 3.0 放弃defineProperty, 使用Proxy的原因"></a>7.1  Vue.js 3.0 放弃defineProperty, 使用Proxy的原因</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">Object<span class="token punctuation">.</span>defineProperty缺陷
+
+监控到数组下标的变化时，开销很大。所以Vue<span class="token punctuation">.</span>js放弃了下标变化的检测；
+Object<span class="token punctuation">.</span>defineProperty只能劫持对象的属性，而Proxy是直接代理对象。Object<span class="token punctuation">.</span>defineProperty需要遍历对象的每个属性，如果属性值也是对象，则需要深度遍历。而 Proxy 直接代理对象，不需要遍历操作。
+Object<span class="token punctuation">.</span>defineProperty对新增属性需要手动进行Observe。vue2时需要使用 vm<span class="token punctuation">.</span>$<span class="token keyword">set</span> 才能保证新增的属性也是响应式
+Proxy支持<span class="token number">13</span>种拦截操作，这是defineProperty所不具有的
+Proxy 作为新标准，长远来看，<span class="token constant">JS</span>引擎会继续优化 Proxy，但 getter 和 setter 基本不会再有针对性优化<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="7-2-Vue的双向数据绑定原理是什么？"><a href="#7-2-Vue的双向数据绑定原理是什么？" class="headerlink" title="7.2  Vue的双向数据绑定原理是什么？"></a>7.2  Vue的双向数据绑定原理是什么？</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">原理（Vue2<span class="token punctuation">.</span>x）
+Vue<span class="token punctuation">.</span>js它是采用数据劫持结合发布者<span class="token operator">-</span>订阅者模式的方式，通过Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span><span class="token punctuation">)</span>来劫持各个属性的setter，getter；
+在数据变动时发布消息给订阅者，触发相应的监听回调。
+<span class="token operator">--</span><span class="token operator">-</span>
+vue3中使用了<span class="token constant">ES6</span><span class="token function">的Proxy</span><span class="token punctuation">(</span>代理<span class="token punctuation">)</span>代理和数据data绑定之后，任何操作都会经过代理实现，就没有了监听不到的情况。
+在vue3中，通常使用ref和reactive进行数据绑定<span class="token punctuation">,</span>注意其获取数值方式的<span class="token punctuation">.</span>value方法而非直接获取。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="8-你知道nextTick吗？它是干什么的？实现原理是什么？"><a href="#8-你知道nextTick吗？它是干什么的？实现原理是什么？" class="headerlink" title="8.你知道nextTick吗？它是干什么的？实现原理是什么？"></a>8.你知道nextTick吗？它是干什么的？实现原理是什么？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">vue用异步队列的方式来控制<span class="token constant">DOM</span>更新和nextTick回调先后执行 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="9-普通函数-箭头函数的区别-构造函数"><a href="#9-普通函数-箭头函数的区别-构造函数" class="headerlink" title="9. 普通函数 箭头函数的区别* 构造函数"></a>9. 普通函数 箭头函数的区别* 构造函数</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1.</span>箭头函数没有原型 原型是<span class="token keyword">undefined</span>
+<span class="token number">2.</span>箭头函数<span class="token keyword">this</span>指向全局对象 而函数指向引用对象
+<span class="token number">3.</span>call，apply，bind方法改变不了箭头函数的指向<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="9-基本类型-引用类型"><a href="#9-基本类型-引用类型" class="headerlink" title="9. 基本类型 引用类型"></a>9. 基本类型 引用类型</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">JavaScript 中共有 <span class="token number">6</span> <span class="token function">种基本数据类型：Undefined、Null、Boolean、Number、String、Symbol</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">in</span> <span class="token constant">ES</span> <span class="token number">6</span><span class="token punctuation">)</span> ！
+引用类型 object
+<span class="token keyword">typeof</span>：经常用来检测一个变量是不是最基本的数据类型
+<span class="token keyword">var</span> a<span class="token punctuation">;</span>
+<span class="token keyword">typeof</span> a<span class="token punctuation">;</span>    <span class="token comment">// undefined</span>
+
+a <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">typeof</span> a<span class="token punctuation">;</span>    <span class="token comment">// object</span>
+
+a <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword">typeof</span> a<span class="token punctuation">;</span>    <span class="token comment">// boolean</span>
+<span class="token keyword">instanceof</span>：用来判断某个构造函数的 prototype 属性所指向的对象是否存在于另外一个要检测对象的原型链上
+<span class="token function">简单说就是判断一个引用类型的变量具体是不是某种类型的对象</span>
+<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token keyword">instanceof</span> <span class="token class-name">Object</span>              <span class="token comment">// true</span>
+<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">instanceof</span> <span class="token class-name">Array</span>               <span class="token comment">// true</span>
+<span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">aa</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">)</span> <span class="token keyword">instanceof</span> <span class="token class-name">RegExp</span>           <span class="token comment">// true</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token keyword">instanceof</span> <span class="token class-name">Function</span>  <span class="token comment">// true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="10-vue2和vue3的区别-vue3快在哪"><a href="#10-vue2和vue3的区别-vue3快在哪" class="headerlink" title="10. vue2和vue3的区别 (vue3快在哪)"></a>10. vue2和vue3的区别 (vue3快在哪)</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">diff算法增加patchFlag静态标识，只对比有静态标识的dom元素
+事件增加缓存
+很多文本节点提升 只定义一次，渲染时不需要再次定义，vue2每次都需要重新定义
+ssr渲染 以字符串方式渲染
+proxy替换了之前的defineProterty
+vite
+ts<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="11-vuex的核心概念"><a href="#11-vuex的核心概念" class="headerlink" title="11. vuex的核心概念"></a>11. vuex的核心概念</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token parameter">state</span> <span class="token operator">=&gt;</span> 基本数据
+<span class="token parameter">getters</span> <span class="token operator">=&gt;</span> 从基本数据派生的数据
+<span class="token parameter">mutations</span> <span class="token operator">=&gt;</span> 修改数据，同步
+<span class="token parameter">actions</span> <span class="token operator">=&gt;</span> <span class="token function">修改数据，异步</span> <span class="token punctuation">(</span>Action 提交的是 mutation，而不是直接变更状态<span class="token punctuation">)</span>
+<span class="token parameter">modules</span> <span class="token operator">=&gt;</span> 模块化Vuex<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="12-vue-router有哪几种导航钩子？"><a href="#12-vue-router有哪几种导航钩子？" class="headerlink" title="12. vue-router有哪几种导航钩子？"></a>12. vue-router有哪几种导航钩子？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">全局导航钩子：router<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span>to<span class="token punctuation">,</span>from<span class="token punctuation">,</span>next<span class="token punctuation">)</span>
+<span class="token function">组件内的钩子：beforeRouteEnter</span> <span class="token punctuation">(</span>to<span class="token punctuation">,</span> from<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token function">beforeRouteUpdate</span> <span class="token punctuation">(</span>to<span class="token punctuation">,</span> from<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token function">beforeRouteLeave</span> <span class="token punctuation">(</span>to<span class="token punctuation">,</span> from<span class="token punctuation">,</span> next<span class="token punctuation">)</span>
+单独路由独享组件：beforeEnter<span class="token operator">:</span> <span class="token punctuation">(</span>to<span class="token punctuation">,</span> from<span class="token punctuation">,</span> next<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="13-v-model-是如何实现的，语法糖实际是什么？"><a href="#13-v-model-是如何实现的，语法糖实际是什么？" class="headerlink" title="13. v-model 是如何实现的，语法糖实际是什么？"></a>13. v-model 是如何实现的，语法糖实际是什么？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">作用在表单元素上 v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"message"</span> 等同于 v<span class="token operator">-</span>bind<span class="token operator">:</span>value<span class="token operator">=</span><span class="token string">"message"</span> v<span class="token operator">-</span>on<span class="token operator">:</span>input<span class="token operator">=</span><span class="token string">"message=$event.target.value"</span>
+作用在组件上<span class="token punctuation">,</span> 本质是一个父子组件通信的语法糖，通过prop和$<span class="token punctuation">.</span>emit实现<span class="token punctuation">,</span> 等同于<span class="token operator">:</span>value<span class="token operator">=</span><span class="token string">"message"</span> @input<span class="token operator">=</span><span class="token string">" $emit('input', $event.target.value)"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="14-常见的事件修饰符及其作用？"><a href="#14-常见的事件修饰符及其作用？" class="headerlink" title="14.常见的事件修饰符及其作用？"></a>14.常见的事件修饰符及其作用？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">.</span>stop：等同于 JavaScript 中的 event<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ，防止事件冒泡；
+<span class="token punctuation">.</span>prevent ：等同于 JavaScript 中的 event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ，防止执行预设的行为（如果事件可取消，则取消该事件，而不停止事件的进一步传播）；
+<span class="token punctuation">.</span>capture ：当元素发生冒泡时，先触发带有该修饰符的元素。若有多个该修饰符，则由外而内触发。如 div1中嵌套div2中嵌套div3<span class="token punctuation">.</span>capture中嵌套div4，那么执行顺序为：div3<span class="token operator">=</span>》div4<span class="token operator">=</span>》div2<span class="token operator">=</span>》div1
+<span class="token punctuation">.</span>self ：只会触发自己范围内的事件，不包含子元素；
+<span class="token punctuation">.</span>once ：只会触发一次。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="15-过滤器-Filter"><a href="#15-过滤器-Filter" class="headerlink" title="15.过滤器 (Filter)"></a>15.过滤器 (Filter)</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">在Vue中使用filters来过滤</span><span class="token punctuation">(</span>格式化<span class="token punctuation">)</span><span class="token function">数据，filters不会修改数据，而是过滤</span><span class="token punctuation">(</span>格式化<span class="token punctuation">)</span>数据，改变用户看到的输出（计算属性 computed ，方法 methods 都是通过修改数据来处理数据格式的输出显示。
+使用场景： 比如需要处理时间、数字等的的显示格式；<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="16-Vue-2-中给-data-中的对象属性添加一个新的属性时会发生什么？如何解决？"><a href="#16-Vue-2-中给-data-中的对象属性添加一个新的属性时会发生什么？如何解决？" class="headerlink" title="16.Vue 2 中给 data 中的对象属性添加一个新的属性时会发生什么？如何解决？"></a>16.Vue 2 中给 data 中的对象属性添加一个新的属性时会发生什么？如何解决？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">视图并未刷新。这是因为在Vue实例创建时，新属性并未声明，因此就没有被Vue转换为响应式的属性，
+自然就不会触发视图的更新，这时就需要使用Vue的全局 api <span class="token function">$set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>： <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>obj<span class="token punctuation">,</span> <span class="token string">'new_property'</span><span class="token punctuation">,</span> <span class="token string">'new_value'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -626,7 +646,7 @@ apply：apply()方法需要将实参封装到一个数组中统一传递（即�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xiatiancheng.github.io/xiatian.github.io/2021/09/07/jiang-yi-jiang-wo-yu-dao-de-mian-shi-ti/">https://xiatiancheng.github.io/xiatian.github.io/2021/09/07/jiang-yi-jiang-wo-yu-dao-de-mian-shi-ti/</a>
+                    <a href="https://xiatiancheng.github.io/xiatian.github.io/2022/01/22/vue/">https://xiatiancheng.github.io/xiatian.github.io/2022/01/22/vue/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -664,8 +684,8 @@ apply：apply()方法需要将实参封装到一个数组中统一传递（即�
                     
                         <div class="article-tag">
                             
-                                <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF-%E9%9D%A2%E8%AF%95-js-vue-react/">
-                                    <span class="chip bg-color">前端,面试,js,vue,react</span>
+                                <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF-react/">
+                                    <span class="chip bg-color">前端,react</span>
                                 </a>
                             
                         </div>
@@ -1098,17 +1118,18 @@ apply：apply()方法需要将实参封装到一个数组中统一传递（即�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/xiatian.github.io/2021/10/07/react/">
+                <a href="/xiatian.github.io/2022/01/22/vue/">
                     <div class="card-image">
                         
                         
-                        <img src="/xiatian.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="react随记">
+                        <img src="/xiatian.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="此篇记录下vue2,3相关面试题">
                         
-                        <span class="card-title">react随记</span>
+                        <span class="card-title">此篇记录下vue2,3相关面试题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1118,9 +1139,9 @@ apply：apply()方法需要将实参封装到一个数组中统一传递（即�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1129,6 +1150,7 @@ apply：apply()方法需要将实参封装到一个数组中统一传递（即�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1147,13 +1169,13 @@ apply：apply()方法需要将实参封装到一个数组中统一传递（即�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/xiatian.github.io/2021/08/28/article-title/">
+                <a href="/xiatian.github.io/2021/10/07/react/">
                     <div class="card-image">
                         
                         
-                        <img src="/xiatian.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="微信公众号排版工具">
+                        <img src="/xiatian.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="react随记">
                         
-                        <span class="card-title">微信公众号排版工具</span>
+                        <span class="card-title">react随记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1164,7 +1186,7 @@ apply：apply()方法需要将实参封装到一个数组中统一传递（即�
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-07
                             </span>
                         <span class="publish-author">
                             
@@ -1177,8 +1199,8 @@ apply：apply()方法需要将实参封装到一个数组中统一传递（即�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/xiatian.github.io/tags/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E-%E5%A4%8F%E5%A4%A9/">
-                        <span class="chip bg-color">更新说明,夏天</span>
+                    <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF-react/">
+                        <span class="chip bg-color">前端,react</span>
                     </a>
                     
                 </div>
