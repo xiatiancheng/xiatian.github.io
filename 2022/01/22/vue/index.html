@@ -483,20 +483,20 @@ beforeDestroy <span class="token operator">-</span><span class="token operator">
 destroyed <span class="token operator">-</span><span class="token operator">&gt;</span> onUnmounted<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="2-父子组件传值"><a href="#2-父子组件传值" class="headerlink" title="2.父子组件传值"></a>2.父子组件传值</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token number">1</span>、父子组件通信
-    <span class="token operator">*</span> props
-    <span class="token operator">*</span> $emit<span class="token operator">/</span>$on
-    <span class="token operator">*</span> $children<span class="token operator">/</span>$parent
-    <span class="token operator">*</span> $attrs<span class="token operator">/</span>$listeners
-    <span class="token operator">*</span> ref
+    <span class="token operator">-</span> props
+    <span class="token operator">-</span> $emit<span class="token operator">/</span>$on
+    <span class="token operator">-</span> $children<span class="token operator">/</span>$parent
+    <span class="token operator">-</span> $attrs<span class="token operator">/</span>$listeners
+    <span class="token operator">-</span> ref
 <span class="token number">2</span>、兄弟组件
-    <span class="token operator">*</span> $parent
-    <span class="token operator">*</span> $root
-    <span class="token operator">*</span> eventbus
-    <span class="token operator">*</span> vuex
+    <span class="token operator">-</span> $parent
+    <span class="token operator">-</span> $root
+    <span class="token operator">-</span> eventbus
+    <span class="token operator">-</span> vuex
 <span class="token number">3</span>、跨层级关系
-    <span class="token operator">*</span> eventbus
-    <span class="token operator">*</span> vuex
-    <span class="token operator">*</span> provide<span class="token operator">/</span>inject
+    <span class="token operator">-</span> eventbus
+    <span class="token operator">-</span> vuex
+    <span class="token operator">-</span> provide<span class="token operator">/</span>inject
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="3-data-为什么是一个函数而不是对象"><a href="#3-data-为什么是一个函数而不是对象" class="headerlink" title="3.data 为什么是一个函数而不是对象"></a>3.data 为什么是一个函数而不是对象</h2><ol>
@@ -600,7 +600,7 @@ destroyed <span class="token operator">-</span><span class="token operator">&gt;
 </blockquote>
 <h2 id="8-你知道-nextTick-吗？它是干什么的？实现原理是什么？"><a href="#8-你知道-nextTick-吗？它是干什么的？实现原理是什么？" class="headerlink" title="8.你知道 nextTick 吗？它是干什么的？实现原理是什么？"></a>8.你知道 nextTick 吗？它是干什么的？实现原理是什么？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">dom更新之后执行的回调<span class="token punctuation">,</span> 可以用来获取更新后的dom元素<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="9-普通函数-箭头函数的区别-构造函数"><a href="#9-普通函数-箭头函数的区别-构造函数" class="headerlink" title="9. 普通函数 箭头函数的区别* 构造函数"></a>9. 普通函数 箭头函数的区别* 构造函数</h2><ol>
+<h2 id="9-普通函数-箭头函数的区别-构造函数"><a href="#9-普通函数-箭头函数的区别-构造函数" class="headerlink" title="9. 普通函数 箭头函数的区别- 构造函数"></a>9. 普通函数 箭头函数的区别- 构造函数</h2><ol>
 <li>箭头函数没有原型 原型是undefined</li>
 <li>箭头函数this指向全局对象 而函数指向引用对象</li>
 <li>call，apply，bind方法改变不了箭头函数的指向</li>
@@ -619,8 +619,7 @@ a <span class="token operator">=</span> <span class="token boolean">true</span><
 <span class="token keyword">typeof</span> a<span class="token punctuation">;</span>    <span class="token comment">// boolean</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 <ol start="2">
-<li><p>instanceof：用来判断某个构造函数的 prototype 属性所指向的对象是否存在于另外一个要检测对象的原型链上<br>简单说就是判断一个引用类型的变量具体是不是某种类型的对象</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">
+<li>instanceof：用来判断某个构造函数的 prototype 属性所指向的对象是否存在于另外一个要检测对象的原型链上<br>简单说就是判断一个引用类型的变量具体是不是某种类型的对象<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">
 <span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token keyword">instanceof</span> <span class="token class-name">Object</span>              <span class="token comment">// true</span>
 
 <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">instanceof</span> <span class="token class-name">Array</span>               <span class="token comment">// true</span>
@@ -628,22 +627,16 @@ a <span class="token operator">=</span> <span class="token boolean">true</span><
 <span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">aa</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">)</span> <span class="token keyword">instanceof</span> <span class="token class-name">RegExp</span>           <span class="token comment">// true</span>
 
 <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token keyword">instanceof</span> <span class="token class-name">Function</span>  <span class="token comment">// true</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="10-vue2-和-vue3-的区别-vue3-快在哪"><a href="#10-vue2-和-vue3-的区别-vue3-快在哪" class="headerlink" title="10. vue2 和 vue3 的区别 (vue3 快在哪)"></a>10. vue2 和 vue3 的区别 (vue3 快在哪)</h2></li>
-<li><p>diff算法增加patchFlag静态标识，只对比有静态标识的dom元素</p>
-</li>
-<li><p>事件增加缓存</p>
-</li>
-<li><p>很多文本节点提升 只定义一次，渲染时不需要再次定义，vue2每次都需要重新定义</p>
-</li>
-<li><p>ssr渲染 以字符串方式渲染</p>
-</li>
-<li><p>proxy替换了之前的defineProterty</p>
-</li>
-<li><p>vite</p>
-</li>
-<li><p>ts</p>
-</li>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<h2 id="10-vue2-和-vue3-的区别-vue3-快在哪"><a href="#10-vue2-和-vue3-的区别-vue3-快在哪" class="headerlink" title="10. vue2 和 vue3 的区别 (vue3 快在哪)"></a>10. vue2 和 vue3 的区别 (vue3 快在哪)</h2><ol>
+<li>diff算法增加patchFlag静态标识，只对比有静态标识的dom元素</li>
+<li>事件增加缓存</li>
+<li>很多文本节点提升 只定义一次，渲染时不需要再次定义，vue2每次都需要重新定义</li>
+<li>ssr渲染 以字符串方式渲染</li>
+<li>proxy替换了之前的defineProterty</li>
+<li>vite</li>
+<li>ts</li>
 </ol>
 <h2 id="11-vuex-的核心概念"><a href="#11-vuex-的核心概念" class="headerlink" title="11. vuex 的核心概念"></a>11. vuex 的核心概念</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token parameter">state</span> <span class="token operator">=&gt;</span> 基本数据
 <span class="token parameter">getters</span> <span class="token operator">=&gt;</span> 从基本数据派生的数据
