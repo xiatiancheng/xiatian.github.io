@@ -719,6 +719,29 @@ a <span class="token operator">=</span> <span class="token boolean">true</span><
 <h2 id="21-js闭包的概念"><a href="#21-js闭包的概念" class="headerlink" title="21. js闭包的概念"></a>21. js闭包的概念</h2><blockquote>
 <p>一个函数和该函数所拥有的变量之和的环境，外部获取使用该变量 但是不能被外部直接改变 要使用该函数拥有的方法去调用</p>
 </blockquote>
+<h2 id="22-cookies，sessionStorage-和-localStorage-的区别？"><a href="#22-cookies，sessionStorage-和-localStorage-的区别？" class="headerlink" title="22. cookies，sessionStorage 和 localStorage 的区别？"></a>22. cookies，sessionStorage 和 localStorage 的区别？</h2><ol>
+<li>cookie:</li>
+</ol>
+<ul>
+<li>cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。</li>
+<li>cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。</li>
+<li>sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。</li>
+</ul>
+<ol start="2">
+<li>存储大小：</li>
+</ol>
+<ul>
+<li>cookie数据大小不能超过4k。</li>
+<li>sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</li>
+</ul>
+<ol start="3">
+<li>过期时间：</li>
+</ol>
+<ul>
+<li>localStorage 存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；</li>
+<li>sessionStorage 数据在当前浏览器窗口关闭后自动删除。</li>
+<li>cookie 设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭</li>
+</ul>
 <p><img src="https://s4.ax1x.com/2022/01/22/7fwPHK.gif" alt="要加油啊"></p>
 
                 
