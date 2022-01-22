@@ -522,7 +522,7 @@ destroyed <span class="token operator">-</span><span class="token operator">&gt;
 <li>MVVM模式在前端领域有广泛的应用，它不仅解决MV耦合问题，还同时解决了维护两者映射关系的大量繁杂代码和DOM操作代码，在提高开发效率、可读性同时还保持了优越的性能表现。</li>
 </ol>
 <h2 id="7-你了解哪些-vue-性能优化的方法"><a href="#7-你了解哪些-vue-性能优化的方法" class="headerlink" title="7.你了解哪些 vue 性能优化的方法"></a>7.你了解哪些 vue 性能优化的方法</h2><ol>
-<li>路由懒加载<ol start="2">
+<li>路由懒加载</li>
 <li>keep-alive缓存页面</li>
 <li>v-show复用DOM</li>
 <li>v-for遍历避免同时使用v-if</li>
@@ -538,8 +538,6 @@ destroyed <span class="token operator">-</span><span class="token operator">&gt;
 <li>子组件分割</li>
 <li>变量本地化</li>
 <li>SSR （SEO、首屏渲染）</li>
-</ol>
-</li>
 </ol>
 <h2 id="7-vue3-新特性"><a href="#7-vue3-新特性" class="headerlink" title="7.vue3 新特性"></a>7.vue3 新特性</h2><ol>
 <li>更快</li>
@@ -670,33 +668,34 @@ a <span class="token operator">=</span> <span class="token boolean">true</span><
 <h2 id="16-Vue-2-中给-data-中添加一个新的属性？如何解决？"><a href="#16-Vue-2-中给-data-中添加一个新的属性？如何解决？" class="headerlink" title="16.Vue 2 中给 data 中添加一个新的属性？如何解决？"></a>16.Vue 2 中给 data 中添加一个新的属性？如何解决？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">视图并未刷新。这是因为在Vue实例创建时，新属性并未声明，因此就没有被Vue转换为响应式的属性，
 自然就不会触发视图的更新，这时就需要使用Vue的全局 api <span class="token function">$set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>： <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>obj<span class="token punctuation">,</span> <span class="token string">'new_property'</span><span class="token punctuation">,</span> <span class="token string">'new_value'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="17-说说你自己项目碰到的难点"><a href="#17-说说你自己项目碰到的难点" class="headerlink" title="17. 说说你自己项目碰到的难点"></a>17. 说说你自己项目碰到的难点</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">结合自己项目 说几个 可以往自己擅长方向引 比如性能优化 数据埋点 或者工程化实践等等<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
+<h2 id="17-说说你自己项目碰到的难点"><a href="#17-说说你自己项目碰到的难点" class="headerlink" title="17. 说说你自己项目碰到的难点"></a>17. 说说你自己项目碰到的难点</h2><blockquote>
+<p>结合自己项目 说几个 可以往自己擅长方向引 比如性能优化 数据埋点 或者工程化实践等等</p>
+</blockquote>
 <h2 id="18-false-和-false"><a href="#18-false-和-false" class="headerlink" title="18. []==false 和 ![]==false"></a>18. []==false 和 ![]==false</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">第一个 <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token boolean">false</span> 转为数字 <span class="token number">0</span><span class="token operator">==</span><span class="token number">0</span>
 第二个 <span class="token operator">!</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token boolean">false</span> 转为布尔 <span class="token boolean">false</span><span class="token operator">==</span><span class="token boolean">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="19-vue-和-react-的相同点和不同点-两个问题"><a href="#19-vue-和-react-的相同点和不同点-两个问题" class="headerlink" title="19. vue 和 react 的相同点和不同点 两个问题"></a>19. vue 和 react 的相同点和不同点 两个问题</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">相同：
-
-    都使用了虚拟dom、
-    都有ssr、
-    都支持jsx，
-    性能好、
-    响应式、
-    数据驱动、
-    将注意力集中保持在核心库，同时也关注路由和负责处理全局状态管理的辅助库。
-
-区别：
-
-    vue使用于小项目、
-    vue学习成本低、
-    vue渲染更快、
-
-    <span class="token operator">-</span>vue有模板而react是jsx、
-
-    vue双向数据绑定，
-    react是单向、
-    vue有指令语法、<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h2 id="19-vue-和-react-的相同点和不同点-两个问题"><a href="#19-vue-和-react-的相同点和不同点-两个问题" class="headerlink" title="19. vue 和 react 的相同点和不同点 两个问题"></a>19. vue 和 react 的相同点和不同点 两个问题</h2><ol>
+<li>相同：<ul>
+<li>都使用了虚拟dom、</li>
+<li>都有ssr、</li>
+<li>都支持jsx，</li>
+<li>性能好、</li>
+<li>响应式、</li>
+<li>数据驱动、</li>
+<li>将注意力集中保持在核心库，同时也关注路由和负责处理全局状态管理的辅助库。</li>
+</ul>
+</li>
+<li>区别：<ul>
+<li>vue使用于小项目、</li>
+<li>vue学习成本低、</li>
+<li>vue渲染更快、</li>
+<li>vue有模板而react是jsx、</li>
+<li>vue双向数据绑定，</li>
+<li>react是单向、</li>
+<li>vue有指令语法、</li>
+</ul>
+</li>
+</ol>
 <h2 id="20-http-请求的方法有哪些"><a href="#20-http-请求的方法有哪些" class="headerlink" title="20.http 请求的方法有哪些"></a>20.http 请求的方法有哪些</h2><ol>
 <li> get</li>
 <li> post</li>
