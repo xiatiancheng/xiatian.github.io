@@ -663,21 +663,22 @@ a <span class="token operator">=</span> <span class="token boolean">true</span><
 <li>hash —— 它的特点在于：hash 虽然出现在 URL 中，但不会被包括在 HTTP 请求中，对后端完全没有影响，因此改变 hash 不会重新加载页面。</li>
 <li>history —— 利用了 HTML5 History Interface 中新增的 pushState() 和 replaceState() 方法。（需要特定浏览器支持）这两个方法应用于浏览器的历史记录栈，<br>在当前已有的 back、forward、go 的基础之上，它们提供了对历史记录进行修改的功能。只是当它们执行修改时，虽然改变了当前的 URL，但浏览器不会立即向后端发送请求。</li>
 </ol>
-<h2 id="13-v-model-是如何实现的，语法糖实际是什么？"><a href="#13-v-model-是如何实现的，语法糖实际是什么？" class="headerlink" title="13. v-model 是如何实现的，语法糖实际是什么？"></a>13. v-model 是如何实现的，语法糖实际是什么？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">作用在表单元素上 v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"message"</span> 等同于 v<span class="token operator">-</span>bind<span class="token operator">:</span>value<span class="token operator">=</span><span class="token string">"message"</span> v<span class="token operator">-</span>on<span class="token operator">:</span>input<span class="token operator">=</span><span class="token string">"message=$event.target.value"</span>
-作用在组件上<span class="token punctuation">,</span> 本质是一个父子组件通信的语法糖，通过prop和$<span class="token punctuation">.</span>emit实现<span class="token punctuation">,</span> 等同于<span class="token operator">:</span>value<span class="token operator">=</span><span class="token string">"message"</span> @input<span class="token operator">=</span><span class="token string">" $emit('input', $event.target.value)"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h2 id="14-常见的事件修饰符及其作用？"><a href="#14-常见的事件修饰符及其作用？" class="headerlink" title="14.常见的事件修饰符及其作用？"></a>14.常见的事件修饰符及其作用？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">.</span>stop：等同于 JavaScript 中的 event<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ，防止事件冒泡；
-<span class="token punctuation">.</span>prevent ：等同于 JavaScript 中的 event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ，防止执行预设的行为（如果事件可取消，则取消该事件，而不停止事件的进一步传播）；
-<span class="token punctuation">.</span>capture ：当元素发生冒泡时，先触发带有该修饰符的元素。若有多个该修饰符，则由外而内触发。如 div1中嵌套div2中嵌套div3<span class="token punctuation">.</span>capture中嵌套div4，那么执行顺序为：div3<span class="token operator">=</span>》div4<span class="token operator">=</span>》div2<span class="token operator">=</span>》div1
-<span class="token punctuation">.</span>self ：只会触发自己范围内的事件，不包含子元素；
-<span class="token punctuation">.</span>once ：只会触发一次。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="15-过滤器-Filter"><a href="#15-过滤器-Filter" class="headerlink" title="15.过滤器 (Filter)"></a>15.过滤器 (Filter)</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">在Vue中使用filters来过滤</span><span class="token punctuation">(</span>格式化<span class="token punctuation">)</span><span class="token function">数据，filters不会修改数据，而是过滤</span><span class="token punctuation">(</span>格式化<span class="token punctuation">)</span>数据，改变用户看到的输出（计算属性 computed ，方法 methods 都是通过修改数据来处理数据格式的输出显示。
-使用场景： 比如需要处理时间、数字等的的显示格式；<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h2 id="16-Vue-2-中给-data-中添加一个新的属性？如何解决？"><a href="#16-Vue-2-中给-data-中添加一个新的属性？如何解决？" class="headerlink" title="16.Vue 2 中给 data 中添加一个新的属性？如何解决？"></a>16.Vue 2 中给 data 中添加一个新的属性？如何解决？</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">视图并未刷新。这是因为在Vue实例创建时，新属性并未声明，因此就没有被Vue转换为响应式的属性，
-自然就不会触发视图的更新，这时就需要使用Vue的全局 api <span class="token function">$set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>： <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>obj<span class="token punctuation">,</span> <span class="token string">'new_property'</span><span class="token punctuation">,</span> <span class="token string">'new_value'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
+<h2 id="13-v-model-是如何实现的，语法糖实际是什么？"><a href="#13-v-model-是如何实现的，语法糖实际是什么？" class="headerlink" title="13. v-model 是如何实现的，语法糖实际是什么？"></a>13. v-model 是如何实现的，语法糖实际是什么？</h2><ol>
+<li>作用在表单元素上 v-model=”message” 等同于 v-bind:value=”message” v-on:input=”message=$event.target.value”</li>
+<li>作用在组件上, 本质是一个父子组件通信的语法糖，通过prop和$.emit实现, 等同于:value=”message” @input=” $emit(‘input’, $event.target.value)”</li>
+</ol>
+<h2 id="14-常见的事件修饰符及其作用？"><a href="#14-常见的事件修饰符及其作用？" class="headerlink" title="14.常见的事件修饰符及其作用？"></a>14.常见的事件修饰符及其作用？</h2><ol>
+<li>.stop：等同于 JavaScript 中的 event.stopPropagation() ，防止事件冒泡；</li>
+<li>.prevent ：等同于 JavaScript 中的 event.preventDefault() ，防止执行预设的行为（如果事件可取消，则取消该事件，而不停止事件的进一步传播）；</li>
+<li>.capture ：当元素发生冒泡时，先触发带有该修饰符的元素。若有多个该修饰符，则由外而内触发。如 div1中嵌套div2中嵌套div3.capture中嵌套div4，那么执行顺序为：div3=》div4=》div2=》div1</li>
+<li>.self ：只会触发自己范围内的事件，不包含子元素；</li>
+<li>.once ：只会触发一次。</li>
+</ol>
+<h2 id="15-过滤器-Filter"><a href="#15-过滤器-Filter" class="headerlink" title="15.过滤器 (Filter)"></a>15.过滤器 (Filter)</h2><ol>
+<li>在Vue中使用filters来过滤(格式化)数据，filters不会修改数据，而是过滤(格式化)数据，改变用户看到的输出（计算属性 computed ，方法 methods 都是通过修改数据来处理数据格式的输出显示。</li>
+<li>使用场景： 比如需要处理时间、数字等的的显示格式；</li>
+</ol>
+<h2 id="16-Vue-2-中给-data-中添加一个新的属性？如何解决？"><a href="#16-Vue-2-中给-data-中添加一个新的属性？如何解决？" class="headerlink" title="16.Vue 2 中给 data 中添加一个新的属性？如何解决？"></a>16.Vue 2 中给 data 中添加一个新的属性？如何解决？</h2><p>视图并未刷新。这是因为在Vue实例创建时，新属性并未声明，因此就没有被Vue转换为响应式的属性，自然就不会触发视图的更新，这时就需要使用Vue的全局 api $set()： this.$set(this.obj, ‘new_property’, ‘new_value’)</p>
 <h2 id="17-说说你自己项目碰到的难点"><a href="#17-说说你自己项目碰到的难点" class="headerlink" title="17. 说说你自己项目碰到的难点"></a>17. 说说你自己项目碰到的难点</h2><blockquote>
 <p>结合自己项目 说几个 可以往自己擅长方向引 比如性能优化 数据埋点 或者工程化实践等等</p>
 </blockquote>
