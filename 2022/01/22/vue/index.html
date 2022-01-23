@@ -1016,16 +1016,14 @@ numbers<span class="token punctuation">.</span><span class="token function">forE
 <span class="token keyword">let</span> filterResult <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index<span class="token punctuation">,</span> array</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> item <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>filterResult<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3,4,5,4,3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<!-- 18. map() 
- - 对数组每一项都运行传入的函数，返回由每次函数调用的结果构成的数组 
-   ```javascript
-    let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
-    let mapResult = numbers.map((item, index, array) => item * 2);
-    console.log(mapResult) // 2,4,6,8,10,8,6,4,2
-  ```  -->
-
-
-
+<ol start="18">
+<li>map() </li>
+</ol>
+<ul>
+<li>对数组每一项都运行传入的函数，返回由每次函数调用的结果构成的数组 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> mapResult <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index<span class="token punctuation">,</span> array</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> item <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mapResult<span class="token punctuation">)</span> <span class="token comment">// 2,4,6,8,10,8,6,4,2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ul>
 <p><img src="https://s4.ax1x.com/2022/01/23/74dbAf.jpg" alt="要加油啊"></p>
 
                 
