@@ -1097,32 +1097,25 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li>forEach() </li>
 </ol>
 <ul>
-<li>对数组每一项都运行传入的函数，没有返回值<pre><code class="javascript"> let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
- numbers.forEach((item, index, array) =&gt; {
-     // 执行某些操作
- });
-</code></pre>
-</li>
+<li>对数组每一项都运行传入的函数，没有返回值<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+numbers<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index<span class="token punctuation">,</span> array</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 执行某些操作</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 <ol start="17">
 <li>filter() </li>
 </ol>
 <ul>
-<li>对数组每一项都运行传入的函数，函数返回 true 的项会组成数组之后返回<pre><code class="javascript"> let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
- let filterResult = numbers.filter((item, index, array) =&gt; item &gt; 2);
- console.log(filterResult); // 3,4,5,4,3
-</code></pre>
-</li>
-</ul>
-<ol start="18">
-<li>map() </li>
-</ol>
-<ul>
-<li>对数组每一项都运行传入的函数，返回由每次函数调用的结果构成的数组 <pre><code class="javascript"> let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
- let mapResult = numbers.map((item, index, array) =&gt; item * 2);
- console.log(mapResult) // 2,4,6,8,10,8,6,4,2
-</code></pre>
-</li>
+<li>对数组每一项都运行传入的函数，函数返回 true 的项会组成数组之后返回<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">    <span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> filterResult <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index<span class="token punctuation">,</span> array</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> item <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>filterResult<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3,4,5,4,3</span>
+  <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">  
+18. map() 
+ - 对数组每一项都运行传入的函数，返回由每次函数调用的结果构成的数组 
+   </span><span class="token template-punctuation string">`</span></span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>javascript
+    <span class="token keyword">let</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> mapResult <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index<span class="token punctuation">,</span> array</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> item <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mapResult<span class="token punctuation">)</span> <span class="token comment">// 2,4,6,8,10,8,6,4,2</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 <p><img src="https://s4.ax1x.com/2022/01/23/74dbAf.jpg" alt="要加油啊"></p>
 
