@@ -515,8 +515,8 @@
 </ol>
 <h2 id="4-v-model"><a href="#4-v-model" class="headerlink" title="4. v-model"></a>4. v-model</h2><ol>
 <li>父组件<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
-  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> v<span class="token operator">-</span>model<span class="token operator">:</span>modelValue简写为v<span class="token operator">-</span>model <span class="token operator">--</span><span class="token operator">&gt;</span>
-  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 可绑定多个v<span class="token operator">-</span>model<span class="token operator">--</span><span class="token operator">&gt;</span>
+  <span class="token comment">//  v-model:modelValue简写为v-model </span>
+  <span class="token comment">//  可绑定多个v-model</span>
   <span class="token operator">&lt;</span>child
     v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"state.name"</span>
     v<span class="token operator">-</span>model<span class="token operator">:</span>age<span class="token operator">=</span><span class="token string">"state.age"</span>
@@ -611,15 +611,15 @@
 <h2 id="7-插槽slot"><a href="#7-插槽slot" class="headerlink" title="7. 插槽slot"></a>7. 插槽slot</h2><ol>
 <li>父组件<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
   <span class="token operator">&lt;</span>child<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 匿名插槽 <span class="token operator">--</span><span class="token operator">&gt;</span>
+    <span class="token comment">// 匿名插槽</span>
     <span class="token operator">&lt;</span>span<span class="token operator">&gt;</span>我是默认插槽<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 具名插槽 <span class="token operator">--</span><span class="token operator">&gt;</span>
+    <span class="token comment">// 具名插槽 </span>
     <span class="token operator">&lt;</span>template #title<span class="token operator">&gt;</span>
       <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>我是具名插槽<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
       <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>我是具名插槽<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
       <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>我是具名插槽<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 作用域插槽 <span class="token operator">--</span><span class="token operator">&gt;</span>
+    <span class="token comment">//  作用域插槽</span>
     <span class="token operator">&lt;</span>template #footer<span class="token operator">=</span><span class="token string">"{ scope }"</span><span class="token operator">&gt;</span>
       <span class="token operator">&lt;</span>footer<span class="token operator">&gt;</span>作用域插槽——姓名：<span class="token punctuation">{</span><span class="token punctuation">{</span> scope<span class="token punctuation">.</span>name <span class="token punctuation">}</span><span class="token punctuation">}</span>，年龄<span class="token punctuation">{</span><span class="token punctuation">{</span> scope<span class="token punctuation">.</span>age <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>footer<span class="token operator">&gt;</span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
@@ -631,11 +631,11 @@
   <span class="token keyword">import</span> child <span class="token keyword">from</span> <span class="token string">'./child.vue'</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li>子组件<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
-  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 匿名插槽 <span class="token operator">--</span><span class="token operator">&gt;</span>
+  <span class="token comment">//  匿名插槽 </span>
   <span class="token operator">&lt;</span>slot<span class="token operator">/</span><span class="token operator">&gt;</span>
-  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 具名插槽 <span class="token operator">--</span><span class="token operator">&gt;</span>
+  <span class="token comment">//  具名插槽 </span>
   <span class="token operator">&lt;</span>slot name<span class="token operator">=</span><span class="token string">'title'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
-  <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 作用域插槽  <span class="token operator">--</span><span class="token operator">&gt;</span>
+  <span class="token comment">//  作用域插槽 </span>
   <span class="token operator">&lt;</span>slot name<span class="token operator">=</span><span class="token string">"footer"</span> <span class="token operator">:</span>scope<span class="token operator">=</span><span class="token string">"state"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
 
@@ -1178,18 +1178,17 @@ cnpm i echarts <span class="token operator">--</span>save
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/xiatian.github.io/2022/02/10/vue3-xie-fa/">
+                <a href="/xiatian.github.io/2022/02/12/python/">
                     <div class="card-image">
                         
                         
-                        <img src="/xiatian.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="vue3写法整理">
+                        <img src="/xiatian.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="Python">
                         
-                        <span class="card-title">vue3写法整理</span>
+                        <span class="card-title">Python</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1199,9 +1198,9 @@ cnpm i echarts <span class="token operator">--</span>save
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-10
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-12
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1210,12 +1209,11 @@ cnpm i echarts <span class="token operator">--</span>save
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF-vue3/">
-                        <span class="chip bg-color">前端,vue3</span>
+                    <a href="/xiatian.github.io/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
                     </a>
                     
                 </div>
