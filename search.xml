@@ -8,7 +8,7 @@
       <link href="/xiatian.github.io/2022/02/26/ji-lu-yi-xia-zi/"/>
       <url>/xiatian.github.io/2022/02/26/ji-lu-yi-xia-zi/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>nginx -t  查找nginx，的安装目录<br>ps  -ef | grep nginx  确定nginx的启动文件<br>nginx -s reload 重启</p></blockquote><ul><li>输入rz命令，看是否已经安装了lrzsz，如果没有安装则执行  yum   -y  install  lrzsz命令进行安装</li><li>yum install zip  </li><li>yum install unzip <blockquote><p>sudo unzip dist.zip  解压文件<br>tar -zxvf jdk-17_linux-x64_bin.tar.gz</p></blockquote></li></ul><blockquote><p>sudu rz 上传文件<br>ll  显示所有文件</p></blockquote><blockquote><p>sudo rm -rf * 不用多说了吧 删除</p></blockquote><p><img src="https://s4.ax1x.com/2022/02/26/bV2BH1.gif" alt="删库跑路"></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>nginx -t  查找nginx，的安装目录</p></blockquote><blockquote><p>ps  -ef | grep nginx  确定nginx的启动文件</p></blockquote><blockquote><p>nginx -s reload 重启</p></blockquote><ul><li>输入rz命令，看是否已经安装了lrzsz，如果没有安装则执行  yum   -y  install  lrzsz命令进行安装</li><li>yum install zip  </li><li>yum install unzip </li></ul><blockquote><p>sudo unzip dist.zip  解压文件</p></blockquote><blockquote><p>tar -zxvf jdk-17_linux-x64_bin.tar.gz</p></blockquote><blockquote><p>sudu rz 上传文件</p></blockquote><blockquote><p>ll  显示所有文件</p></blockquote><blockquote><p>sudo rm -rf * 不用多说了吧 删除</p></blockquote><p><img src="https://s4.ax1x.com/2022/02/26/bV2BH1.gif" alt="删库跑路"></p>]]></content>
       
       
       
